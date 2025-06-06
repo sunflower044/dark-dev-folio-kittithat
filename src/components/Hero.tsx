@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Code2, Sparkles } from "lucide-react";
+import { ChevronDown, Code2, Sparkles, Play } from "lucide-react";
 
 const Hero = () => {
   const [text, setText] = useState("");
@@ -20,12 +20,12 @@ const Hero = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-background via-background to-secondary/20">
+    <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-background via-background to-secondary/20 pt-16">
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-float">
           <div className="mb-8 relative">
@@ -51,10 +51,11 @@ const Hero = () => {
             พร้อมแชร์ความรู้และประสบการณ์ผ่านแพลตฟอร์มต่างๆ
           </p>
           
-          <div className="flex gap-4 justify-center mb-12">
+          <div className="flex gap-4 justify-center mb-12 flex-wrap">
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 glow"
+              onClick={() => scrollToSection('portfolio')}
             >
               <Sparkles className="w-5 h-5 mr-2" />
               ดูผลงาน
@@ -63,14 +64,30 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-primary/50 text-primary hover:bg-primary/10 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              onClick={() => scrollToSection('contact')}
             >
-              ติดต่อเรา
+              ติดต่อฉัน
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-red-500/50 text-red-400 hover:bg-red-500/10 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              asChild
+            >
+              <a 
+                href="https://www.youtube.com/channel/UC_P2kym4Mv2TjCH-pw3vSog" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Play className="w-5 h-5 mr-2" />
+                ดู YouTube
+              </a>
             </Button>
           </div>
         </div>
         
         <button 
-          onClick={scrollToAbout}
+          onClick={() => scrollToSection('about')}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary hover:text-primary/80 transition-colors duration-300 animate-bounce"
         >
           <ChevronDown className="w-8 h-8" />
