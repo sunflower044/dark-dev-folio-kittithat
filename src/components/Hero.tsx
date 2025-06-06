@@ -5,7 +5,7 @@ import { ChevronDown, Code2, Sparkles, Play } from "lucide-react";
 
 const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "AI Content Creator & Educator";
+  const fullText = "ผู้สร้างคอนเทนต์ AI และนักการศึกษา";
   
   useEffect(() => {
     let index = 0;
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">Napaporn</span>
+            <span className="gradient-text">นภาพร</span>
           </h1>
           
           <div className="h-16 mb-8">
@@ -46,9 +46,9 @@ const Hero = () => {
           </div>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            สอนเทคโนโลยี AI และการเขียนโปรแกรม มาแล้ว 10 ปี
+            แชร์ความรู้ด้านเทคโนโลยี AI และการเขียนโปรแกรม
             <br />
-            พร้อมแชร์ความรู้และประสบการณ์ผ่านแพลตฟอร์มต่างๆ
+            พร้อมสร้างแรงบันดาลใจให้กับคนรุ่นใหม่มาแล้วกว่า 10 ปี
           </p>
           
           <div className="flex gap-4 justify-center mb-12 flex-wrap">
@@ -71,7 +71,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-red-500/50 text-red-400 hover:bg-red-500/10 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              className="border-pink-500/50 text-pink-400 hover:bg-pink-500/10 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105"
               asChild
             >
               <a 

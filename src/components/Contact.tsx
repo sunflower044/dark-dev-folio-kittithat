@@ -7,11 +7,11 @@ const Contact = () => {
   const contactMethods = [
     {
       icon: Users,
-      title: "Facebook Page",
+      title: "เพจ Facebook",
       description: "ติดตามเพจ Facebook ของฉันเพื่อรับข้อมูลข่าวสารและเนื้อหาใหม่ๆ เกี่ยวกับ AI",
       link: "https://www.facebook.com/share/1LdgTVA5u5/?mibextid=wwXIf",
       buttonText: "เยี่ยมชมเพจ",
-      color: "blue"
+      color: "pink"
     },
     {
       icon: MessageCircle,
@@ -19,15 +19,15 @@ const Contact = () => {
       description: "ต้องการคำปรึกษาหรือสอบถามข้อมูลเพิ่มเติม? ส่งข้อความมาหาฉันได้เลย",
       link: "https://www.facebook.com/share/1LdgTVA5u5/?mibextid=wwXIf",
       buttonText: "ส่งข้อความ",
-      color: "green"
+      color: "purple"
     },
     {
       icon: Youtube,
-      title: "YouTube Channel",
+      title: "ช่อง YouTube",
       description: "ติดตามช่อง YouTube เพื่อรับชมวิดีโอสอน AI และ Programming ล่าสุด",
       link: "https://www.youtube.com/channel/UC_P2kym4Mv2TjCH-pw3vSog",
       buttonText: "ดูช่อง",
-      color: "red"
+      color: "rose"
     },
     {
       icon: Mail,
@@ -35,7 +35,7 @@ const Contact = () => {
       description: "สำหรับการติดต่อเชิงธุรกิจหรือความร่วมมือในโปรเจกต์ต่างๆ",
       link: "mailto:napaporn@example.com",
       buttonText: "ส่งอีเมล",
-      color: "purple"
+      color: "fuchsia"
     }
   ];
 
@@ -48,12 +48,12 @@ const Contact = () => {
 
   const getColorClasses = (color: string) => {
     const colors = {
-      blue: "bg-blue-500/20 hover:bg-blue-500 text-blue-400 hover:text-white border-blue-500/50",
-      green: "bg-green-500/20 hover:bg-green-500 text-green-400 hover:text-white border-green-500/50",
-      red: "bg-red-500/20 hover:bg-red-500 text-red-400 hover:text-white border-red-500/50",
-      purple: "bg-purple-500/20 hover:bg-purple-500 text-purple-400 hover:text-white border-purple-500/50"
+      pink: "bg-pink-500/20 hover:bg-pink-500 text-pink-400 hover:text-white border-pink-500/50",
+      purple: "bg-purple-500/20 hover:bg-purple-500 text-purple-400 hover:text-white border-purple-500/50",
+      rose: "bg-rose-500/20 hover:bg-rose-500 text-rose-400 hover:text-white border-rose-500/50",
+      fuchsia: "bg-fuchsia-500/20 hover:bg-fuchsia-500 text-fuchsia-400 hover:text-white border-fuchsia-500/50"
     };
-    return colors[color as keyof typeof colors] || colors.blue;
+    return colors[color as keyof typeof colors] || colors.pink;
   };
 
   return (
@@ -114,11 +114,11 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-wrap gap-3 justify-center text-sm text-muted-foreground mb-6">
-                <span className="bg-primary/10 px-3 py-1 rounded-full">AI Consulting</span>
-                <span className="bg-primary/10 px-3 py-1 rounded-full">Programming Mentoring</span>
-                <span className="bg-primary/10 px-3 py-1 rounded-full">Content Creation</span>
-                <span className="bg-primary/10 px-3 py-1 rounded-full">Tech Education</span>
-                <span className="bg-primary/10 px-3 py-1 rounded-full">Career Guidance</span>
+                <span className="bg-primary/10 px-3 py-1 rounded-full">คำปรึกษา AI</span>
+                <span className="bg-primary/10 px-3 py-1 rounded-full">แนะแนวการเขียนโปรแกรม</span>
+                <span className="bg-primary/10 px-3 py-1 rounded-full">การสร้างคอนเทนต์</span>
+                <span className="bg-primary/10 px-3 py-1 rounded-full">การศึกษาเทคโนโลยี</span>
+                <span className="bg-primary/10 px-3 py-1 rounded-full">แนะแนวอาชีพ</span>
               </div>
 
               <div className="flex justify-center space-x-4">

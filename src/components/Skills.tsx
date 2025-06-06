@@ -6,45 +6,45 @@ const Skills = () => {
   const skills = [
     {
       icon: Brain,
-      title: "Artificial Intelligence",
-      description: "Machine Learning, Deep Learning, Computer Vision, NLP",
+      title: "ปัญญาประดิษฐ์",
+      description: "Machine Learning, Deep Learning, Computer Vision, การประมวลผลภาษาธรรมชาติ",
       level: 90,
-      color: "text-blue-400"
+      color: "text-pink-400"
     },
     {
       icon: Code,
-      title: "Programming",
+      title: "การเขียนโปรแกรม",
       description: "Python, JavaScript, React, Node.js, SQL",
       level: 85,
-      color: "text-green-400"
-    },
-    {
-      icon: Video,
-      title: "Content Creation",
-      description: "Video Production, Tutorial Creation, Storytelling",
-      level: 95,
-      color: "text-red-400"
-    },
-    {
-      icon: BookOpen,
-      title: "Teaching & Education",
-      description: "Curriculum Development, Online Learning, Mentoring",
-      level: 90,
-      color: "text-yellow-400"
-    },
-    {
-      icon: Users,
-      title: "Community Building",
-      description: "Social Media Management, Engagement, Networking",
-      level: 80,
       color: "text-purple-400"
     },
     {
+      icon: Video,
+      title: "การสร้างคอนเทนต์",
+      description: "การผลิตวิดีโอ, การสร้างบทเรียน, การเล่าเรื่อง",
+      level: 95,
+      color: "text-rose-400"
+    },
+    {
+      icon: BookOpen,
+      title: "การสอนและการศึกษา",
+      description: "การพัฒนาหลักสูตร, การเรียนรู้ออนไลน์, การให้คำปรึกษา",
+      level: 90,
+      color: "text-fuchsia-400"
+    },
+    {
+      icon: Users,
+      title: "การสร้างชุมชน",
+      description: "การจัดการโซเชียลมีเดีย, การสร้างการมีส่วนร่วม, การสร้างเครือข่าย",
+      level: 80,
+      color: "text-violet-400"
+    },
+    {
       icon: Zap,
-      title: "Innovation",
-      description: "Creative Problem Solving, Research, Technology Trends",
+      title: "นวัตกรรม",
+      description: "การแก้ปัญหาเชิงสร้างสรรค์, การวิจัย, เทรนด์เทคโนโลยี",
       level: 85,
-      color: "text-orange-400"
+      color: "text-pink-300"
     }
   ];
 
